@@ -6,7 +6,16 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <>
+    <h1>Netflix Anime that I watched</h1>
+    <ol>
+      <li>One Punch Man</li>
+      <li>Death Note</li>
+      <li>My Hero Academia</li>
+      <li>Naruto</li>
+      <li>Demon Slayer</li>
+    </ol>
+    </>
   </React.StrictMode>,
   document.getElementById('root')
 );
