@@ -4,13 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var time = new Date().toLocaleTimeString({hour:'numeric',hour12:false});
+var greet;
+if(time>=1&&time<=11)
+{
+greet="Good Morning"
+}if(time>=12&&time<=7)
+{
+  greet="Good Afternoon"
+}else{
+  greet = "Good Night"
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <>
     <center>
     <div className="firstdiv">
       <p className="para1">Hello Sir,</p>&nbsp;&nbsp;
-      <p className="para2">Good Morning</p>
+      <p className="para2">{greet}</p>
     </div>
     </center>
     </>
