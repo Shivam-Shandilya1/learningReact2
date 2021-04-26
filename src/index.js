@@ -4,17 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var today =new Date().toLocaleString('hi-IN',{weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
 ReactDOM.render(
   <React.StrictMode>
     <>
-    <h1>Netflix Anime that I watched</h1>
-    <ol>
-      <li>One Punch Man</li>
-      <li>Death Note</li>
-      <li>My Hero Academia</li>
-      <li>Naruto</li>
-      <li>Demon Slayer</li>
-    </ol>
+    <h1>Shivam Shandilya</h1>
+    <p>Today Date: {today}</p>
+    <p>Time: {new Date().toLocaleString('hi-IN', { hour: 'numeric',minute:'numeric',second:'numeric' , hour12: true })}</p>
+    
     </>
   </React.StrictMode>,
   document.getElementById('root')
