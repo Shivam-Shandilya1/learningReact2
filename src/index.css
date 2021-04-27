@@ -12,8 +12,27 @@ code {
     monospace;
 }
 
-body
+/* body
 {
 background-color: #bfe5df;
+} */
+
+.CardHover:hover
+{
+ box-shadow:0px, 30px, 18px, -8px  #888888;
+ transform:scale(1.05,1.05)
 }
 
+button
+{
+margin-top:0px;
+margin-bottom:35px;
+height:40px;
+width:275px;
+font-weight:700;
+font-size: 1.5rem;
+color:#515151;
+background-color:#b4b4b4;
+cursor:pointer;
+
+}

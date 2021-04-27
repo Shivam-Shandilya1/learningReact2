@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Content from './Content.jsx';
+import NetflixContent from './NetflixContent.jsx';
+import Card from './Card.jsx';
 
+
+
+console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
-   <Content />
+  <>
+   <NetflixContent />
+  </>
   </React.StrictMode>,
   document.getElementById('root')
 );
