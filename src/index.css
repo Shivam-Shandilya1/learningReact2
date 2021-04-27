@@ -16,34 +16,4 @@ body
 {
 background-color: #bfe5df;
 }
-.para1
-{
-  text-align: center;
-  font-size: 3.9rem;
-  color:#f07b2d ;
-  display: inline-block;
-  font-weight: 649;
-  margin-top: 35px;
- 
 
-}
-.para2
-{
-  text-align: center;
-  font-size: 3.9rem;
-  color:#50d305 ;
-  display: inline-block;
-  font-weight: 649;
-  margin-top: 35px;
-  
-
-}
-.firstdiv
-{
-background-color: #ffec94;
-margin-top:250px;
-text-align: center;
-height: 174px;
-width: 925px;
-border-radius: 45px;
-}
