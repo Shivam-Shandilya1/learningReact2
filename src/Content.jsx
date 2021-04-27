@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {add,subs,mul,divide} from './Calculator';
 function Content () 
 {
     var para1 =
@@ -63,6 +64,16 @@ greet="Good Morning";
         <div style={firstdiv}>
           <p id="paraone"style={para1}>Hello Sir,</p>&nbsp;&nbsp;
           <p id="paratwo" style={para2}>{greet}</p>
+        </div>
+        <div>
+            <p style={{color:"#ff008d",fontSize:"3.5rem",fontWeight:"600"}}>Calculator</p>
+            <ul>
+                <li>Sum Of Numbers is: {add(23,45)}</li>
+                <li>Difference Of Numbers is: {subs(23,45)}</li>
+                <li>Product of Num is: {mul(3,4)}</li>
+                <li>Division of Num is: {divide(5,3)}</li>
+            </ul>
+
         </div>
         </center>
         </>
