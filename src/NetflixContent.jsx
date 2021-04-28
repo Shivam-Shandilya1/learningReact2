@@ -9,32 +9,58 @@ var bodyCss = {
 }
 var heading =
 {
- color:"red",
+ color:"#afafaf",
 
  fontSize:"2.5rem",
  textAlign:"center",
 }
+
+var ns = 
+[
+   {
+       imglink:process.env.PUBLIC_URL + '/Images/OnePunchMan.jfif',
+       name:"One Punch Man"
+   } ,
+   {
+       imglink:process.env.PUBLIC_URL + '/Images/Death-Note.jpg',
+       name:"Death Note"
+   },
+   {
+    imglink:process.env.PUBLIC_URL + '/Images/MyHeroAcademia.png',
+    name:"My Hero Academia"
+   },
+   {
+       imglink:process.env.PUBLIC_URL + '/Images/Naruto.jpg',
+       name:"Naruto"
+   },
+   {
+       imglink:process.env.PUBLIC_URL + '/Images/DemonSlayer.jpg',
+       name:"Demon Slayer"
+   }
+
+]
+const newarr = ns.map((cvalue)=>
+{return(
+    <Card
+ imgsrc={`${cvalue.imglink}`}
+ name={`${cvalue.name}`} />
+
+)
+    
+})
 
 function NetflixContent ()
 {
     return (
         <center>
         <div style = {bodyCss}>
-        <h1 style ={heading}>Netflix Anime that have been watched</h1>
-        <Card
-   imgsrc={process.env.PUBLIC_URL + '/Images/OnePunchMan.jfif'} 
-       name="One Punch Man"
-   />
-      
-        <Card
-   imgsrc={process.env.PUBLIC_URL + '/Images/Death-Note.jpg'} 
- name="Death Note" />
-   <Card
-   imgsrc={process.env.PUBLIC_URL + '/Images/MyHeroAcademia.png'} 
-      name="My Hero Academia" /> 
+        <div className="header">
+        <h1 style ={heading}>Netflix Anime</h1>
+        </div>
+        {newarr}
         </div>
         </center>
-    )
+      )
 }
 
 export default NetflixContent;
