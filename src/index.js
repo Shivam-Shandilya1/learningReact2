@@ -13,7 +13,9 @@ console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
   <>
+  <Content />
    <NetflixContent />
+
   </>
   </React.StrictMode>,
   document.getElementById('root')

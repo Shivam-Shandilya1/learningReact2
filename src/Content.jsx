@@ -60,12 +60,16 @@ greet="Good Morning";
 
     return(
         <>
+        <div style={{backgroundColor:"#bfe5df"}}>
         <center>
+        <h3 style={{color:"green"}}>Task1</h3>
         <div style={firstdiv}>
+       
           <p id="paraone"style={para1}>Hello Sir,</p>&nbsp;&nbsp;
           <p id="paratwo" style={para2}>{greet}</p>
         </div>
         <div>
+        <h3 style={{color:"green"}}>Task2</h3>
             <p style={{color:"#ff008d",fontSize:"3.5rem",fontWeight:"600"}}>Calculator</p>
             <ul>
                 <li>Sum Of Numbers is: {add(23,45)}</li>
@@ -76,6 +80,8 @@ greet="Good Morning";
 
         </div>
         </center>
+        </div>
+        <h3 style={{color:"green",textAlign:"center"}}>Task3</h3>
         </>
     );
 }
