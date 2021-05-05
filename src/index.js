@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Content from './Content.jsx';
 import NetflixContent from './NetflixContent.jsx';
-import Slot from './Slot.jsx'
+import Slot from './Slot.jsx';
+
 import Card from './Card.jsx';
 
 
@@ -14,8 +15,8 @@ console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
   <>
-  <Content />
-   <NetflixContent />
+  {/* <Content />
+   <NetflixContent /> */}
 <Slot />
   </>
   </React.StrictMode>,
