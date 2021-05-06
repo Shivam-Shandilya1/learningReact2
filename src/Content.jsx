@@ -23,7 +23,7 @@ var para2 =
   display:"inline-block" ,
   fontWeight:"649" ,
   marginTop:"35px" ,
-  
+  textShadow:"6px 6px black"
 
 };
 
