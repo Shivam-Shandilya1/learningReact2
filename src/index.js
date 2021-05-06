@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Content from './Content.jsx';
 import NetflixContent from './NetflixContent.jsx';
 import Slot from './Slot.jsx';
+import Time from "./Time.jsx";
 
 import Card from './Card.jsx';
 
@@ -15,9 +16,10 @@ console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
   <>
-  {/* <Content />
-   <NetflixContent /> */}
-<Slot />
+  <Time/>
+  <Content />
+   <NetflixContent /> 
+ <Slot /> 
   </>
   </React.StrictMode>,
   document.getElementById('root')
