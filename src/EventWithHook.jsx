@@ -4,6 +4,7 @@ const btnc={
     width:"350px",
     boxShadow:"10px 10px 20px 20px #2a2a1f",
     marginTop:"105px",
+    marginBottom:"74px",
 }
 
 function Clicking ()
@@ -24,13 +25,12 @@ function Clicking ()
     }
     return(
         <>
-        
+         <center style={{height:"273px"}}>
         <div style={{backgroundColor:bg}}>
-        <center style={{height:"300px"}}>
+        <h3 style={{color:"green",margin:"0px"}}>Task 5</h3>
         <button onClick={bgchange} onDoubleClick={bgNormal} style={btnc}>{name}</button>
-        </center>
         </div>
-        
+        </center> 
         </>
     )
    
