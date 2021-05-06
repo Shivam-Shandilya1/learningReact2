@@ -17,11 +17,11 @@ console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
   <>
-  <Time/>
+  {/* <Time/>
   <Content />
    <NetflixContent /> 
  <Slot /> 
- <Clicking />
+ <Clicking /> */}
  <Form />
   </>
   </React.StrictMode>,
