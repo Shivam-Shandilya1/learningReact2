@@ -7,7 +7,7 @@ import Content from './Content.jsx';
 import NetflixContent from './NetflixContent.jsx';
 import Slot from './Slot.jsx';
 import Time from "./Time.jsx";
-
+import Clicking from "./EventWithHook.jsx"
 import Card from './Card.jsx';
 
 
@@ -20,6 +20,7 @@ ReactDOM.render(
   <Content />
    <NetflixContent /> 
  <Slot /> 
+ <Clicking />
   </>
   </React.StrictMode>,
   document.getElementById('root')
