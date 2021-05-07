@@ -15,42 +15,47 @@ function Form ()
     }); 
     const addname= (event)=>
     {
-        const data = []
+        const {name,value}=event.target;
        SetName((prev)=>
        {
-           if(event.target.name ==="fname")
-           {
-               return{
-                   fname: event.target.value ,
-                   lname: prev.lname,
-                   email:prev.email,
-                   contact:prev.contact,
-                }
-           }else if(event.target.name === "lname"){
-            return{
-                lname: event.target.value ,
-                fname: prev.fname,
-                email:prev.email,
-                contact:prev.contact,}
+           return{
+               ...prev,
+               [name]:value,
+
            }
-       else if(event.target.name === "email"){
-        return{
-            email: event.target.value ,
-            fname: prev.fname,
-            lname:prev.lname,
-            contact:prev.contact,
-        }
-       }else{
-        return{
-            email: prev.email ,
-            fname: prev.fname,
-            lname:prev.lname,
-            contact:event.target.value,
-        }
+    //        if(event.target.name ==="fname")
+    //        {
+    //            return{
+    //                fname: event.target.value ,
+    //                lname: prev.lname,
+    //                email:prev.email,
+    //                contact:prev.contact,
+    //             }
+    //        }else if(event.target.name === "lname"){
+    //         return{
+    //             lname: event.target.value ,
+    //             fname: prev.fname,
+    //             email:prev.email,
+    //             contact:prev.contact,}
+    //        }
+    //    else if(event.target.name === "email"){
+    //     return{
+    //         email: event.target.value ,
+    //         fname: prev.fname,
+    //         lname:prev.lname,
+    //         contact:prev.contact,
+    //     }
+    //    }else{
+    //     return{
+    //         email: prev.email ,
+    //         fname: prev.fname,
+    //         lname:prev.lname,
+    //         contact:event.target.value,
+    //     }
        
     }
 
-    })};
+    )};
     
     const clicked= (event) =>
     {
