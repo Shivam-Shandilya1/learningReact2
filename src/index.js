@@ -23,7 +23,7 @@ ReactDOM.render(
  <Slot /> 
  <Clicking /> */}
  {/* <Form /> */}
- <Todolist />
+ <Todolist /> 
   </>
   </React.StrictMode>,
   document.getElementById('root')

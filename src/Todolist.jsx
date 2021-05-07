@@ -29,24 +29,34 @@ const Todolist = () =>
 {
    
    
-    const [task,Settask]=useState();
+    const [task,Settask]=useState("");
     const [list,Setlist] =useState([]);
     const addtask = (event)=>
     {
-        const {value}=event.target;
-        Settask(value);
+        Settask(event.target.value);
     }
-    const taskaddtn =(event)=>
+    const taskaddtn =()=>
     {
         Setlist((prev)=>
         {
             return [...prev,task];
         
-        })
+        });
+        Settask("");
     }
-     const taskmintn = (event)=>
-     {
-         console.log(event);
+     const taskmintn = (id)=>
+     {   
+        
+        
+         Setlist((prev)=>
+         {
+             return prev.filter((list,index)=>
+             {
+                 return index !==id;
+             })
+         })
+         
+        
      }
     
     return(
@@ -73,12 +83,12 @@ const Todolist = () =>
     <div style={{marginTop:"30px"}}>
     <ul>
       {
-          list.map((cur)=>
+          list.map((cur,index)=>
           {
               return (<><div style={{backgroundColor:"#c9c9c9",marginRight:"30px",borderRadius:"20px",marginBottom:"30px",display:"inline-block",height:"4rem",width:"320px"}}>
-                  <p style={{fontSize:"2rem",display:"inline-block",marginTop: "11px",marginBottom:"0px",marginLeft:"30px",marginRight:"30px"}}> {cur} </p>
+                  <p className="todoli" style={{fontSize:"2rem",display:"inline-block",marginTop: "11px",marginBottom:"0px",marginLeft:"30px",marginRight:"30px"}}> {cur} </p>
                   </div>
-                  <button className="todominusbtn" onClick={taskmintn} type="submit" >-</button>
+                  <button className="todominusbtn" onClick={taskmintn} type="submit" value={index}>x</button>
                   <br></br>
                  </> )
                 
