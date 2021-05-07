@@ -10,7 +10,7 @@ import Time from "./Time.jsx";
 import Clicking from "./EventWithHook.jsx";
 import Form from "./Form.jsx";
 import Card from './Card.jsx';
-
+import Todolist from "./Todolist"
 
 
 console.log(__dirname);
@@ -22,7 +22,8 @@ ReactDOM.render(
    <NetflixContent /> 
  <Slot /> 
  <Clicking /> */}
- <Form />
+ {/* <Form /> */}
+ <Todolist />
   </>
   </React.StrictMode>,
   document.getElementById('root')
