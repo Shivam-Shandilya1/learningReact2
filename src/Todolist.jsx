@@ -1,4 +1,5 @@
 import rect,{useState} from 'react';
+import ToDolistcomp from './ToDolistcomp';
 const todobody ={
     backgroundColor:"#373746" 
     
@@ -44,15 +45,15 @@ const Todolist = () =>
         });
         Settask("");
     }
-     const taskmintn = (id)=>
+     const taskmintn = (index)=>
      {   
         
         
          Setlist((prev)=>
          {
-             return prev.filter((list,index)=>
+             return prev.filter((arrElem,id)=>
              {
-                 return index !==id;
+                 return id !==index;
              })
          })
          
@@ -85,12 +86,11 @@ const Todolist = () =>
       {
           list.map((cur,index)=>
           {
-              return (<><div style={{backgroundColor:"#c9c9c9",marginRight:"30px",borderRadius:"20px",marginBottom:"30px",display:"inline-block",height:"4rem",width:"320px"}}>
-                  <p className="todoli" style={{fontSize:"2rem",display:"inline-block",marginTop: "11px",marginBottom:"0px",marginLeft:"30px",marginRight:"30px"}}> {cur} </p>
-                  </div>
-                  <button className="todominusbtn" onClick={taskmintn} type="submit" value={index}>x</button>
-                  <br></br>
-                 </> )
+              return (<ToDolistcomp 
+                  cur= {cur}
+                  taskmintn={taskmintn}
+                  index={index}
+              />)
                 
           })
       } 
