@@ -64,9 +64,11 @@ function Form ()
     }
     return(
         <>
-        <center>
-        <div style={stylo}>
         
+        <center>
+       
+        <div style={stylo}>
+        <h2 style={{color:"green"}}>Task 6</h2>
             <h1 style={heading} className="head1">Hello {namevalue.fname} {namevalue.lname}</h1>
             <h2>{namevalue.email}</h2>
             <h2>{namevalue.contact}</h2>

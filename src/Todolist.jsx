@@ -1,4 +1,4 @@
-import rect,{useState} from 'react';
+import React,{useState} from 'react';
 import ToDolistcomp from './ToDolistcomp';
 const todobody ={
     backgroundColor:"#373746" 
@@ -65,6 +65,7 @@ const Todolist = () =>
 <div style={todobody}>
 <center style={{paddingTop:"9px",paddingBottom:"60px", backgroundColor:"#373746" ,}}>
     <div style={content}>
+    <h2 style={{color:"green"}}>Task 7</h2>
 <h1 style={heading}>ToDo List</h1>
 <div>
 

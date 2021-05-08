@@ -11,7 +11,7 @@ import Clicking from "./EventWithHook.jsx";
 import Form from "./Form.jsx";
 import Card from './Card.jsx';
 import Todolist from "./Todolist"
-
+import Clickbtn from "./Clickbtn.jsx"
 
 console.log(__dirname);
 ReactDOM.render(
@@ -21,9 +21,12 @@ ReactDOM.render(
   <Content />
    <NetflixContent /> 
  <Slot /> 
- <Clicking /> */}
- {/* <Form /> */}
- <Todolist /> 
+ <Clicking />
+ 
+ <Form />
+ 
+ <Todolist />  */}
+ <Clickbtn/>
   </>
   </React.StrictMode>,
   document.getElementById('root')
