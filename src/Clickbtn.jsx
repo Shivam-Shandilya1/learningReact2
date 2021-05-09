@@ -28,9 +28,10 @@ function Clickbtn ()
     }
     return (
         <>
-        <div style={{backgroundColor:"olive",height:"450px",paddingTop:"100px",paddingBottom:"100px"}}>
+        <div style={{backgroundColor:"olive",height:"650px",paddingTop:"100px",paddingBottom:"100px"}}>
+        <h3 style={{color:"green",textAlign:"center"}}>Task 9</h3>
         <div style={{marginRight:"30%",marginLeft:"30%",height:"300px",backgroundColor:"white",boxShadow:"10px 10px 10px 10px black",borderRadius:"20px",paddingTop:"120px"}}>
-         <div style={{backgroundColor:"navy",fontWeight:"700",fontSize:"2.5rem",paddingTop:"10px",paddingBottom:"10px",textAlign:"center",color:"white"}}>
+         <div style={{backgroundColor:"navy",fontWeight:"700",fontSize:"2.5rem",paddingTop:"10px",paddingBottom:"0px",textAlign:"center",color:"white"}}>
              {num}
          </div>
          <div>

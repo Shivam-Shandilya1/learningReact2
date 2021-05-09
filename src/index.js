@@ -15,7 +15,7 @@ import Todolist from "./Todolist";
 import Clickbtn from "./Clickbtn.jsx";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Googlekeep from "./Googlekeep.jsx";
-console.log(__dirname);
+import PokeCard from './PokeCard.jsx';
 ReactDOM.render(
   <React.StrictMode>
   <>
@@ -27,9 +27,10 @@ ReactDOM.render(
  
  <Form />
  
- <Todolist />  */}
- {/* <Clickbtn/> */}
+ <Todolist /> 
+ <Clickbtn/>
  <Googlekeep />
+ <PokeCard /> */}
   </>
   </React.StrictMode>,
   document.getElementById('root')
