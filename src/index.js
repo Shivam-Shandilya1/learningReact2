@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Content from './Content.jsx';
@@ -10,9 +11,10 @@ import Time from "./Time.jsx";
 import Clicking from "./EventWithHook.jsx";
 import Form from "./Form.jsx";
 import Card from './Card.jsx';
-import Todolist from "./Todolist"
-import Clickbtn from "./Clickbtn.jsx"
-
+import Todolist from "./Todolist";
+import Clickbtn from "./Clickbtn.jsx";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Googlekeep from "./Googlekeep.jsx";
 console.log(__dirname);
 ReactDOM.render(
   <React.StrictMode>
@@ -26,7 +28,8 @@ ReactDOM.render(
  <Form />
  
  <Todolist />  */}
- <Clickbtn/>
+ {/* <Clickbtn/> */}
+ <Googlekeep />
   </>
   </React.StrictMode>,
   document.getElementById('root')
