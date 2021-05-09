@@ -83,4 +83,17 @@ cursor:pointer;
 {
   text-transform: capitalize;
 }
-/*Google Keep Styles*/
+/*Route Styles*/
+.menu_style
+{width:100%;
+line-height:60px;
+background-color:#20232a;
+display:flex;
+justify-content:space-around;
+}
+a {
+  color:#61dafb;
+}
+a.active_class{
+  color:#ffffff;
+}
