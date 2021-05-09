@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter,Rooute,Switch } from "react-router-dom";
 import './index.css';
 
 import App from './App';
@@ -16,6 +17,7 @@ import Clickbtn from "./Clickbtn.jsx";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Googlekeep from "./Googlekeep.jsx";
 import PokeCard from './PokeCard.jsx';
+import ClientServer from './ClientServer';
 ReactDOM.render(
   <React.StrictMode>
   <>
@@ -31,6 +33,10 @@ ReactDOM.render(
  <Clickbtn/>
  <Googlekeep />
  <PokeCard /> */}
+ <BrowserRouter>
+   <ClientServer />
+ </BrowserRouter>
+ 
   </>
   </React.StrictMode>,
   document.getElementById('root')
