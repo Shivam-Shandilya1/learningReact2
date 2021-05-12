@@ -21,7 +21,7 @@ import ClientServer from './ClientServer';
 ReactDOM.render(
   <React.StrictMode>
   <>
-  {/* <Time/>
+  <Time/>
   <Content />
    <NetflixContent /> 
  <Slot /> 
@@ -32,7 +32,7 @@ ReactDOM.render(
  <Todolist /> 
  <Clickbtn/>
  <Googlekeep />
- <PokeCard /> */}
+ <PokeCard />
  <BrowserRouter>
    <ClientServer />
  </BrowserRouter>
